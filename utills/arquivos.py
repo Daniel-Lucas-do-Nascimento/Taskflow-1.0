@@ -23,3 +23,40 @@ def gerar_id():
     else:
         return 1
 
+def validar_titulo():
+    while True:
+        titulo = input('Digite o título da tarefa: ')
+        if titulo.strip() == '':
+            print('Título inválido. Digite novamente.')
+        else:
+            return titulo
+            break
+
+def validar_prioridade():
+    while True:
+        prioridade = input('Digite a prioridade da tarefa (baixa, média, alta): ')
+        if prioridade.lower() not in ['baixa', 'média' , 'alta']:
+            print('Prioridade inválida. Digite novamente.')
+        else:
+            return prioridade
+            break
+
+def validar_prazo():
+    import datetime
+    while True:
+        prazo = input('Data limite (dd/mm/aaaa): ')
+        try:
+            datetime.datetime.strptime(prazo, '%d/%m/%Y')
+            return prazo
+            break
+        except ValueError:
+            print('Data inválida. Digite novamente.')
+
+def escrever_tarefa(tarefa):
+    print(f"""ID: {tarefa['id']}
+Título: {tarefa['titulo']}
+Descrição: {tarefa['descricao']}
+Prioridade: {tarefa['prioridade']}
+Prazo: {tarefa['prazo']}
+Status: {tarefa['status']}""")
+            
