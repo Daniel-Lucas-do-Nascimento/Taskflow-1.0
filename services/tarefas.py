@@ -52,16 +52,16 @@ def editar_tarefa():
                 if tarefas['id'] == editar:
                     escrever_tarefa(tarefas)
                     titulo('Edite sua tarefa agora')
-                    titulo = validar_titulo()
+                    novo_titulo = validar_titulo()
                     descricao = input('Digite a descrição: ')
                     prioridade = validar_prioridade()
                     prazo = validar_prazo()
                     tarefa ={'id':tarefas['id'],
-                            'titulo':titulo,
+                            'titulo':novo_titulo,
                             'descricao': descricao,
                             'prioridade':prioridade,
                             'prazo':prazo,
-                            'status':'pendente'}
+                            'status':tarefas['status']}
                     dados[c] = tarefa
                     salvar_json(dados)
                     verificador = True
