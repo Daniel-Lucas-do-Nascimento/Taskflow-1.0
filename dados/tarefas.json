@@ -13,14 +13,6 @@
         "descricao": "r",
         "prioridade": "alta",
         "prazo": "14/02/2026",
-        "status": "pendente"
-    },
-    {
-        "id": 3,
-        "titulo": "8",
-        "descricao": "9",
-        "prioridade": "baixa",
-        "prazo": "10/10/2025",
-        "status": "pendente"
+        "status": "Finalizado"
     }
 ]

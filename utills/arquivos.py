@@ -52,8 +52,9 @@ def validar_prazo():
         except ValueError:
             print('Data inválida. Digite novamente.')
 
+
 def escrever_tarefa(tarefa):
-    print(f"""ID: {tarefa['id']}
+    print(f"""\nID: {tarefa['id']}
 Título: {tarefa['titulo']}
 Descrição: {tarefa['descricao']}
 Prioridade: {tarefa['prioridade']}
