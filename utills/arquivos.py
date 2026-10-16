@@ -30,7 +30,6 @@ def validar_titulo():
             print('Título inválido. Digite novamente.')
         else:
             return titulo
-            break
 
 def validar_prioridade():
     while True:
@@ -39,7 +38,6 @@ def validar_prioridade():
             print('Prioridade inválida. Digite novamente.')
         else:
             return prioridade
-            break
 
 def validar_prazo():
     import datetime
@@ -48,7 +46,6 @@ def validar_prazo():
         try:
             datetime.datetime.strptime(prazo, '%d/%m/%Y')
             return prazo
-            break
         except ValueError:
             print('Data inválida. Digite novamente.')
 

@@ -1,4 +1,4 @@
-from utills.arquivos import titulo,salvar_json
+from utills.arquivos import titulo
 from time import sleep
 while True:
 
@@ -9,7 +9,7 @@ while True:
 [4] - Editar tarefa
 [5] - Concluir tarefa
 [6] - Excluir tarefa
-[7] - Ver extatísticas
+[7] - Ver estatísticas
 [0] - Sair''')
 
     while True:
@@ -59,12 +59,12 @@ while True:
         excluir_tarefa()
         sleep(2)
     elif opcao == 7:
-        titulo('Estátistica')
+        titulo('Estatística')
         from services.tarefas import estatistica
         estatistica()
         sleep(2)
     elif opcao == 0:
-        titulo('Logout')
+        titulo('Saída')
         print('\033[31mATENCIOSAMENTE Taskflow!\033[m')
         sleep(2)
         break

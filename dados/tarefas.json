@@ -1,18 +1,10 @@
 [
     {
-        "id": 1,
-        "titulo": "r",
-        "descricao": "r",
-        "prioridade": "r",
-        "prazo": "20",
-        "status": "pendente"
-    },
-    {
-        "id": 2,
-        "titulo": "r",
-        "descricao": "r",
+        "id": 3,
+        "titulo": "Eu quero é Deus.",
+        "descricao": "Eu só quero ele.",
         "prioridade": "alta",
-        "prazo": "14/02/2026",
+        "prazo": "25/12/2026",
         "status": "Finalizado"
     }
 ]
