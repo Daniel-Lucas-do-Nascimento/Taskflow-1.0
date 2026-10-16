@@ -48,7 +48,7 @@ https://www.python.org/downloads/
 Depois entre no projeto no GitHub,  e execute:
 
 ```bash
-git clone URL_DO_SEU_REPOSITORIO
+git clone //github.com/Daniel-Lucas-do-Nascimento/Taskflow-1.0
 ```
 
 
